@@ -32,7 +32,7 @@ and password that you defined in the .env.
 
 - After entering the pgAdmin dasboard you will have to configure 
 the server:
-  - In General it can be the chosen name, for example: askme_docker_db;
+  - In General it can be the chosen name, for example: askme_docker_db
   - In Connection:
     - Host Name: db
     - Port: 5432
@@ -50,8 +50,17 @@ $ go generate
 the tables have already been created.
 
 - If you prefer to use the terminal to access the database you have to 
-- install PostgreSQL and then:
+install PostgreSQL and then:
 
 ```
 $ psql -h localhost -p 5432 -U <DATABASE_USER> -d <DATABASE_NAME>
 ```
+
+## Used Library
+
+- https://go.dev
+- https://github.com/go-chi/cors
+- https://github.com/jackc/tern
+- https://github.com/joho/godotenv
+- https://docs.sqlc.dev/en/latest/index.html
+- https://github.com/go-chi/chi
