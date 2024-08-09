@@ -18,8 +18,8 @@ PGADMIN_DEFAULT_PASSWORD="{Your Password}"
 - Then you need execute:
 
 ```
-$ go mod tidy
-$ docker compose up -d
+go mod tidy
+docker compose up -d
 ```
 
 - In the browser:
@@ -43,7 +43,7 @@ the server:
 
 - In the project directory:
 ```
-$ go generate 
+go generate 
 ```
 
 - After that you can query the database interface and you can see that 
@@ -53,7 +53,7 @@ the tables have already been created.
 install PostgreSQL and then:
 
 ```
-$ psql -h localhost -p 5432 -U <DATABASE_USER> -d <DATABASE_NAME>
+psql -h localhost -p 5432 -U <DATABASE_USER> -d <DATABASE_NAME>
 ```
 
 ## Used Library
